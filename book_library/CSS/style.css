@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #005A9C;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #007ACC;
+    color: #FFF;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form input[type="text"], form input[type="date"], form input[type="number"], form select, form input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus, form input[type="date"]:focus, form input[type="number"]:focus, form select:focus {
+    border-color: #007ACC;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 10px 15px;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    form input[type="text"], form input[type="date"], form input[type="number"], form select, form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Button styles */
+form input[name="add_book"], form input[name="update_book"], form input[name="delete_book"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+form input[name="add_book"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+form input[name="add_book"]:hover {
+    background-color: #45a049;
+}
+
+form input[name="update_book"] {
+    background-color: #2196F3;
+    color: white;
+}
+
+form input[name="update_book"]:hover {
+    background-color: #0b7dda;
+}
+
+form input[name="delete_book"] {
+    background-color: #f44336;
+    color: white;
+}
+
+form input[name="delete_book"]:hover {
+    background-color: #da190b;
+}
