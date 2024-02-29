@@ -72,6 +72,7 @@ $books = getAllBooks();
                 <th>ISBN</th>
                 <th>Title</th>
                 <th>Author</th>
+                <th>Book cover</th>
                 <th>Publisher</th>
                 <th>Year</th>
                 <th>Genre</th>
@@ -85,6 +86,14 @@ $books = getAllBooks();
                 <td><?php echo htmlspecialchars($row['ISBN']); ?></td>
                 <td><?php echo htmlspecialchars($row['Title']); ?></td>
                 <td><?php echo htmlspecialchars($row['Author']); ?></td>
+                <td>
+          
+            <?php if ($row['ImagePath']): ?>
+                <img src="images/<?php echo htmlspecialchars($row['ImagePath']); ?>" alt="Book Cover" style="max-width:100px;max-height:150px;">
+            <?php else: ?>
+                No cover available
+            <?php endif; ?>
+        </td>
                 <td><?php echo htmlspecialchars($row['Publisher']); ?></td>
                 <td><?php echo htmlspecialchars($row['Pub_year']); ?></td>
                 <td><?php echo htmlspecialchars($row['Genre']); ?></td>
